@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Hide .DS_Store
+.DS_Store
+
+# Hide any .ipynb_checkpoints
+.ipynb_checkpoints
+
+# Hide pycache 
+__pycache__
