@@ -1,3 +1,5 @@
+# NOTE: I worked with my TA, Jay Yu, on this homework during a joint homework help session on April 9, 2021. 
+
 # Import dependencies 
 from splinter import Browser
 from bs4 import BeautifulSoup as soup
@@ -18,7 +20,7 @@ def mars_scrape():
     # Open and let load
     url = 'https://redplanetscience.com/'
     browser.visit(url)
-    time.sleep(2)
+    time.sleep(1)
 
     # Grab HTML 
     html = browser.html 
@@ -36,7 +38,7 @@ def mars_scrape():
     # Open and let load
     url = 'https://spaceimages-mars.com/'
     browser.visit(url)
-    time.sleep(2)
+    time.sleep(1)
 
     # Grab HTML 
     html = browser.html 
@@ -64,7 +66,7 @@ def mars_scrape():
     # Open and let load
     url = 'https://marshemispheres.com/'
     browser.visit(url)
-    time.sleep(2)
+    time.sleep(1)
 
     # Grab HTML 
     html = browser.html 
@@ -91,7 +93,7 @@ def mars_scrape():
         
         # Visit and let load
         browser.visit(secondary_link)
-        time.sleep(2)
+        time.sleep(1)
         
         # Grab HTML 
         html = browser.html

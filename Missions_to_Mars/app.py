@@ -1,3 +1,5 @@
+# NOTE: I worked with my TA, Jay Yu, on this homework during a joint homework help session on April 9, 2021. 
+
 from flask import Flask, render_template, redirect, url_for
 from flask_pymongo import PyMongo
 from scrape_mars import mars_scrape
@@ -28,6 +30,8 @@ def scrape():
 
     # Update the Mongo database using update and upsert=True
     mars.update({}, mars_data, upsert=True)
+
+    # Redirect to the index 
     return redirect('/')
 
 
