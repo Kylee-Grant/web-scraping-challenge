@@ -56,7 +56,7 @@ def mars_scrape():
 
     # Changing column names 
     mars_table.columns = ['Description', 'Metrics']
-    mars_table_html = mars_table.to_html()
+    mars_table_html = mars_table.to_html(index=False)
 
     # Visit the USGS Astrogeology site for images for each of Mars' hemispheres: https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars
     # You will need to click each of the links to the hemispheres in order to find the image url to the full resolution image.
